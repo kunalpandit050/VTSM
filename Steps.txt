@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------------
+1) Create Practice database
+
+2) Run following command in package manager console under VTSApp project
+
+add-migration Initial
+
+update-database
+
+3) Execute VTSMicroservice Query.sql file in Practice database
+
+--------------------------------------------------------------------------------------
+4) For Token
+
+a) Hit http://localhost:58482/api/Authenticate/register from postman to register user
+b) Hit http://localhost:58482/api/Authenticate/login from postman to get token
+
+--------------------------------------------------------------------------------------
