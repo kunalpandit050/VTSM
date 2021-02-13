@@ -1,0 +1,301 @@
+{
+	"id": "d377c904-2128-b171-bf68-5d185a5f89a2",
+	"name": "Vehicle",
+	"description": "",
+	"order": [
+		"d05286d3-e599-5899-e451-b92c6b3c1d2c",
+		"f31e672b-8ca9-6c28-01fd-6ccd7b665bb2",
+		"b7cc39f7-6ef7-29a2-bd0d-b689a3dc22e8",
+		"74b8524f-3c4d-ace0-3606-5ba9383a5be9",
+		"7874365f-6655-651e-9cf8-c1a71cda23c0",
+		"69ac73d0-7e66-8069-2cd8-4c674ea5974a",
+		"cdf6fb1e-aae7-4e3d-40ba-3e83230349da",
+		"08a961db-f5bd-d669-c6d0-049be38af0ce",
+		"43f56925-8608-5a35-be9b-b8f67ef09268"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1613146795897,
+	"owner": "10622578",
+	"public": false,
+	"requests": [
+		{
+			"id": "08a961db-f5bd-d669-c6d0-049be38af0ce",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiU3VzaGFudCIsImp0aSI6IjNjODkyNzQyLWExNDgtNDg3My05OTIzLTg0NTQxNzU0YzIyMyIsImV4cCI6MTYxMzIxNjE1NywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MTk1NSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJ9.11lTXpl-PSExVxXvDKZwYoLcuwzRbYJyMpIHBlB6ZFQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiU3VzaGFudCIsImp0aSI6IjNjODkyNzQyLWExNDgtNDg3My05OTIzLTg0NTQxNzU0YzIyMyIsImV4cCI6MTYxMzIxNjE1NywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MTk1NSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJ9.11lTXpl-PSExVxXvDKZwYoLcuwzRbYJyMpIHBlB6ZFQ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/Vehicle/Get/Test",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613205407976,
+			"name": "Get Vehicle",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": []
+		},
+		{
+			"id": "43f56925-8608-5a35-be9b-b8f67ef09268",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/Authenticate/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613205138045,
+			"name": "Register User",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"Sushant\",\n\t\"email\":\"sushant7ghanekar@gmail.com\",\n\t\"password\":\"Sushant@123\"\n}"
+		},
+		{
+			"id": "69ac73d0-7e66-8069-2cd8-4c674ea5974a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:58482/api/Vehicle/GetList?page=1&pageSize=10",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613165056739,
+			"name": "GetVehicleList",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": []
+		},
+		{
+			"id": "74b8524f-3c4d-ace0-3606-5ba9383a5be9",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:58482/api/User/GetList?page=1&pageSize=10",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "pageSize",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613165154468,
+			"name": "GetUserList",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": []
+		},
+		{
+			"id": "7874365f-6655-651e-9cf8-c1a71cda23c0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/User/Update",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update User",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613162686009,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"userId\":1,\n\"name\":\"Test2\",\n\"mobileNumber\":\"8823452701\",\n\"organization\":\"Test2\",\n\"address\":\"Test2\",\n\"emailAddress\":\"Test2@gmail.com\",\n\"location\":\"Test2\",\n\"photopath\":\"Test2\"\n}"
+		},
+		{
+			"id": "b7cc39f7-6ef7-29a2-bd0d-b689a3dc22e8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/Vehicle/Update",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Vehicle",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1613160841588,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"userId\":1,\n\t\"vehicleNumber\":\"Test\",\n\t\"vehicleType\":\"Test2\",\n\t\"chassisNumber\":\"Test2\",\n\t\"engineNumber\":\"Test2\",\n\t\"manufacturingYear\":2005,\n\t\"loadCarryingCapacity\":\"Test2\",\n\t\"makeOfVehicle\":\"Test2\",\n\t\"modelNumber\":\"Test2\",\n\t\"bodyType\":\"Test2\",\n\t\"organisationName\":\"Test2\",\n\t\"deviceId\":1\n}"
+		},
+		{
+			"id": "cdf6fb1e-aae7-4e3d-40ba-3e83230349da",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiU3VzaGFudCIsImp0aSI6IjNjODkyNzQyLWExNDgtNDg3My05OTIzLTg0NTQxNzU0YzIyMyIsImV4cCI6MTYxMzIxNjE1NywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MTk1NSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJ9.11lTXpl-PSExVxXvDKZwYoLcuwzRbYJyMpIHBlB6ZFQ\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiU3VzaGFudCIsImp0aSI6IjNjODkyNzQyLWExNDgtNDg3My05OTIzLTg0NTQxNzU0YzIyMyIsImV4cCI6MTYxMzIxNjE1NywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MTk1NSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJ9.11lTXpl-PSExVxXvDKZwYoLcuwzRbYJyMpIHBlB6ZFQ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/User/Get/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613205398166,
+			"name": "GetUser",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": []
+		},
+		{
+			"id": "d05286d3-e599-5899-e451-b92c6b3c1d2c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/Vehicle/Save",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613160524126,
+			"name": "SaveVehicle",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": [],
+			"rawModeData": "{\n\t\"userId\":1,\n\t\"vehicleNumber\":\"Test\",\n\t\"vehicleType\":\"Test\",\n\t\"chassisNumber\":\"Test\",\n\t\"engineNumber\":\"Test\",\n\t\"manufacturingYear\":1234,\n\t\"loadCarryingCapacity\":\"Test\",\n\t\"makeOfVehicle\":\"Test\",\n\t\"modelNumber\":\"Test\",\n\t\"bodyType\":\"Test\",\n\t\"organisationName\":\"Test\",\n\t\"deviceId\":1\n}"
+		},
+		{
+			"id": "f31e672b-8ca9-6c28-01fd-6ccd7b665bb2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:58482/api/User/Save",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1613162653340,
+			"name": "Save User",
+			"description": "",
+			"collectionId": "d377c904-2128-b171-bf68-5d185a5f89a2",
+			"responses": [],
+			"rawModeData": "{\n\"userId\":0,\n\"name\":\"Test1\",\n\"mobileNumber\":\"8898782701\",\n\"organization\":\"Test\",\n\"address\":\"Test\",\n\"emailAddress\":\"Test@gmail.com\",\n\"location\":\"Test\",\n\"photopath\":\"Test\"\n\n \n}"
+		}
+	]
+}
